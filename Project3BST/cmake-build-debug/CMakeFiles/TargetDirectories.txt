@@ -1,0 +1,3 @@
+C:/Users/chmer/CLionProjects/Project3BST/cmake-build-debug/CMakeFiles/Project3BST.dir
+C:/Users/chmer/CLionProjects/Project3BST/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/chmer/CLionProjects/Project3BST/cmake-build-debug/CMakeFiles/rebuild_cache.dir
