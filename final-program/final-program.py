@@ -33,7 +33,6 @@ if not os.path.isfile(f"{firstname}-data/user_data.csv"): # If the user hasn't f
         source = os.path.join(source_dir, filename)
         target = os.path.join(target_dir, filename)
         shutil.move(source, target)
-    os.chdir('../')
 
 bst = False
 
