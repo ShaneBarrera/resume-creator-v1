@@ -117,5 +117,6 @@ for paragraph in reply.split("\n"):
 doc.save("resume-draft.docx")
 
 # Future development
+# - We need to add sources to the readme.md in the datasets folder for Celia's datasets even if it's just us saying we web scraped them
 # - Automatic formating
 # - Better UX (i.e. not just command line interface)
