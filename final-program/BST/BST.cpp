@@ -156,12 +156,12 @@ int main() {
 
     // Populate the AVL tree with words from files (as before)
     string filenames[] = {
-            "words_list_output.csv",
-            "final_buzzwords_skills_output.csv",
-            "combined_words_output.csv",
-            "pleaseopen_output.csv",
-            "verb_list_output.csv",
-            "top_words_output.csv"
+            "../csv-files/words_list_output.csv",
+            "../csv-files/final_buzzwords_skills_output.csv",
+            "../csv-files/combined_words_output.csv",
+            "../csv-files/pleaseopen_output.csv",
+            "../csv-files/verb_list_output.csv",
+            "../csv-files/top_words_output.csv"
     };
 
     for(const string& filename : filenames){
