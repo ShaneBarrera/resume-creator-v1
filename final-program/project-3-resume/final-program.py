@@ -18,10 +18,19 @@ if not os.path.isfile("questionnaire.txt"):
             for j in range(questionnaire.shape[1]):
                 f.write(str(questionnaire.iat[i, j]) + '\n')
 
-# Call Celia's skill word extraction program
-os.chdir("../BST")
-subprocess.call(["g++", "main.cpp", "-o", "BST"])
-subprocess.call(["./BST"])
+bst = False
+
+if bst:
+    # Call Celia's BST skill word extraction program
+    os.chdir("../BST")
+    subprocess.call(["g++", "main.cpp", "-o", "BST"])
+    subprocess.call(["./BST"])
+
+else:
+    # Call Shane's heap skill word extraction program
+    os.chdir("../heap")
+    subprocess.call(["g++", "heap.cpp", "-o", "heap"])
+    subprocess.call(["./heap"])
 
 # Load in the data from files
 os.chdir("../questionnaire")

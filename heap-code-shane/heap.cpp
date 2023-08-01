@@ -108,12 +108,12 @@ int main() {
 
     // Populate the max heap with words from files (as before)
     string filenames[] = {
-        "C:\\Users\\shane\\Documents\\University of Florida\\Classes\\Cop 3530\\Summer\\Projects\\Project_3\\heap-code-shane\\words_list_output.csv",
-        "C:\\Users\\shane\\Documents\\University of Florida\\Classes\\Cop 3530\\Summer\\Projects\\Project_3\\heap-code-shane\\final_buzzwords_skills_output.csv",
-        "C:\\Users\\shane\\Documents\\University of Florida\\Classes\\Cop 3530\\Summer\\Projects\\Project_3\\heap-code-shane\\combined_words_output.csv",
-        "C:\\Users\\shane\\Documents\\University of Florida\\Classes\\Cop 3530\\Summer\\Projects\\Project_3\\heap-code-shane\\pleaseopen_output.csv",
-        "C:\\Users\\shane\\Documents\\University of Florida\\Classes\\Cop 3530\\Summer\\Projects\\Project_3\\heap-code-shane\\verb_list_output.csv",
-        "C:\\Users\\shane\\Documents\\University of Florida\\Classes\\Cop 3530\\Summer\\Projects\\Project_3\\heap-code-shane\\top_words_output.csv",
+        "words_list_output.csv",
+        "final_buzzwords_skills_output.csv",
+        "combined_words_output.csv",
+        "pleaseopen_output.csv",
+        "verb_list_output.csv",
+        "top_words_output.csv",
     };
 
     for (const string& filename : filenames) {
