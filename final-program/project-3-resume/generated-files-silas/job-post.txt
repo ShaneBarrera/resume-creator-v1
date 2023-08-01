@@ -1,0 +1,41 @@
+Job Opening Summary
+ The DSS analyst will play a key role in delivering essential data through providing high-level reporting and analytics for key quality improvement, patient safety and service initiatives. This position will provide ad hoc reporting, maintain standard reporting and forecast key business processes using various systems, databases and tools, including MS Office Suite, MS SQL Server, MS Visual Studio and SAP Business Objects.
+
+ This position will work with physicians and data science teams to manage and analyze data pertaining to the needs of assigned projects. The incumbent will communicate and explain complex data and information to leaders at all levels of the organization.
+
+ This role reports to the manager of DSS (reporting) and interfaces with a wide customer base from unit managers to executive leadership, providing insights on both business and clinical operations. Builds and maintains positive relationships with clients while utilizing industry and subject-matter best practices. Translates data for reports, which requires a keen understanding of the health care business, operational processes and the ability to perform complex analyses using data resources and technical tools.
+
+ Job Opening Qualifications
+ Minimum Education and Experience Requirements:
+
+ Minimum Education:
+
+ Bachelor's degree in STEM (science, technology, engineering and math).
+ Business analytics or a related field required.
+
+
+ Minimum Job Experience:
+
+ Two years of health care data analysis experience with in-depth knowledge of health care operations required. An advanced degree may substitute as health care data analysis experience on a year-for-year basis.
+ Job-Related Knowledge, Skills and Abilities:
+
+ Strong problem-solving, quantitative and analytical abilities.
+ Experience with large relational databases and data warehousing, including the ability to query database using SQL or similar language.
+ Mastery of business intelligence report writing and visualization tools, such as Epic Analytics, Business Objects (WebI), Power BI, Tableau or similar report writing and visualization tools.
+ Advanced Excel spreadsheet skills, including complex functions, formulas and formatting.
+ Proven ability to work with and track large amounts of data (millions of records) with accuracy.
+ Excellent communication, collaboration and delegation skills.
+ Demonstrated ability to communicate information in an easy-to-understand format.
+
+
+ Motor Vehicle Operator Designation:
+
+ Employees in the position will operate vehicles for an assigned business purpose as a "non-frequent driver."
+
+
+ Licensure/Certification/Registration::
+
+ To be completed within six months of hire: clinical data model train track (proficiency).
+ #LI-90
+
+ Shift hours: 8 a.m. - 5 p.m., Monday-Friday

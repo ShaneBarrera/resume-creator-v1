@@ -1,0 +1,36 @@
+What type of resume are you seeking to create? (Type stem, healthcare, or other).
+stem
+Give us a list of your technical skills separated by commas.
+python, jupyter notebooks, python libraries including numpy pandas and sklearn, R, C++, github workflows
+Give us a list of your soft skills separated by commas.
+creative, organized, enthusiastic, team-player
+What is your highest level of education?
+college
+What degree(s) have you earned and from which institution(s)?
+bachelor's degree from the university of florida
+What was your major or field of study?
+Data science
+Did you receive any academic honors or awards?
+I received an AI certificate
+What research experience do you have?
+nan
+Can you describe any significant projects you have worked on? What was your role?
+I coded a small video game demo for a puzzle game called Boom + Bust. I wrote a paper on using sentiment analysis and news headlines to predict the movements of the dow jones. I helped code a resume creation program
+What were the goals and outcomes of those projects?
+The goal was to see if I could code a short but fun video game. The game was pretty good. The program was able to get a simulation accuracy of 140% return on investment over one year. The program was a success and now has a small user base
+Did you collaborate with a team or work independently on these projects?
+I worked independently on the first two and as team leader on the third
+Did any of these projects have a measurable impact or result in any achievements?
+Yes, all 3 projects met their goals
+What is your employment history? Please provide the job titles, companies, and dates of employment.
+satchels pizza 2018-present
+What did you do at your job? What did a typical day look like?
+Working at satchels pizza taught me dedication and hard work. Over the 3 years I’ve worked there I have worked as in the following positions: Graphic designer, Waiter, Cashier, Host, Soda maker
+Did you achieve any notable accomplishments or receive any recognition during your employment?
+I was promoted three times
+Were there any specific technologies or tools you utilized in your previous roles?
+Restaurant POS systems, Adobe illustrator, Adobe photoshop
+Have you pursued any additional certifications, training, or professional development courses? If yes, please provide details.
+I’m certified in the adobe and microsoft suites
+Have you attended any relevant workshops, conferences, or industry events?
+No

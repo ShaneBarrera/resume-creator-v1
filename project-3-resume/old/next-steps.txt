@@ -1,0 +1,5 @@
+finish program-v1.1 and see what all strings you need for the final resume
+go back to program-v1 and re-write it so as to get all the relevent info
+    - user info should come from a text file
+    - job post should be pasted in and skills from job post should be gone over
+final document should be made
