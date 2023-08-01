@@ -119,4 +119,7 @@ doc.save("resume-draft.docx")
 # Future development
 # - We need to add sources to the readme.md in the datasets folder for Celia's datasets even if it's just us saying we web scraped them
 # - Automatic formating
-# - Better UX (i.e. not just command line interface)
+#   - Automatic formatting will require the questionare to be totaly overhalled
+#   - That way we can build the resume from the formating up. That's the only way to do it, but I didn't know till finishing the project
+#   - Rebuilding the questionare will give us a chance to streamline it to as few questions as possible
+#   - We can also add Better UX (i.e. not just command line interface)
