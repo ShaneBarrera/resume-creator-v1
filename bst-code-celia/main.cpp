@@ -11,36 +11,34 @@ struct Node {
     int height;
     Node* left;
     Node* right;
-
-    Node(const string& val) : value(val), height(0), left(nullptr), right(nullptr) {}
+    Node(const string& val) : value(val), height(0), left(nullptr), right(nullptr) {} //Constructor
 };
-bool comparePhrasesWithHyphens(const string& str1, const string& str2) {
-    string phrase1 = str1;
-    string phrase2 = str2;
-    transform(phrase1.begin(), phrase1.end(), phrase1.begin(), ::tolower);
+bool comparePhrases(const string& string_1, const string& string_2){
+    string phrase1 = string_1;
+    string phrase2 = string_2;
+    transform(phrase1.begin(), phrase1.end(), phrase1.begin(), ::tolower); //converts to lowercase
     transform(phrase2.begin(), phrase2.end(), phrase2.begin(), ::tolower);
-    return phrase1 == phrase2;
+    return phrase1 == phrase2;               //Compares lower case versions of words
 }
 class AVLTree{
 private:
-    Node* root;
-
-    int height(Node* node){
+    int height(Node* node){                 //All the helper/rotation functions
         if (node == nullptr){
             return -1;
-        } else {
+        }
+        else{
             return node->height;
         }
     }
 
-    int getBalanceFactor(Node* node){
+    int getBalanceFactor(Node* node){           //Based on Aman's slides
         if (node == nullptr) {
             return 0;
         }
         return height(node->left) - height(node->right);
     }
 
-    Node* rotateRight(Node* node){
+    Node* rotateRight(Node* node){              //Rotation functions based on content in Aman's slides
         Node* newRoot = node->left;
         node->left = newRoot->right;
         newRoot->right = node;
@@ -61,38 +59,41 @@ private:
 
         return newRoot;
     }
-    Node* searchRecursive(Node* node, const string& value) {
-        if (node == nullptr || comparePhrasesWithHyphens(value, node->value)) {
+
+public:
+    Node* root;
+    AVLTree() : root(nullptr) {}
+
+    Node* searchRecursive(Node* node, const string& value){
+        if (node == nullptr || comparePhrases(value, node->value)){ //If at end of tree or matched
             return node;
         }
-
-        if (value < node->value) {
+        if (value < node->value){                           //Searches based on alphabetical order
             return searchRecursive(node->left, value);
-        } else {
+        }
+        else{
             return searchRecursive(node->right, value);
         }
     }
 
-    Node* insertRecursive(Node* node, const string& value) {
-        if (node == nullptr) {
+    Node* insertRecursive(Node* node, const string& value){
+        if (node == nullptr){               //Once it reaches the end creates the new node
             return new Node(value);
         }
 
-        // Compare phrases with hyphens
-        if (comparePhrasesWithHyphens(value, node->value)) {
-            // Handle the case when the phrase already exists in the tree (no duplicates allowed)
+        if (comparePhrases(value, node->value)){  //If already in tree
             return node;
         }
 
-        if (value < node->value) {
-            node->left = insertRecursive(node->left, value);
-        } else if (value > node->value) {
-            node->right = insertRecursive(node->right, value);
+        if (value < node->value){
+            node->left = insertRecursive(node->left, value);  //Enters left subtree if less
+        }
+        else if (value > node->value){
+            node->right = insertRecursive(node->right, value); //Right subtree if more
         }
 
-        node->height = max(height(node->left), height(node->right)) + 1;
-
-        int balanceFactor = getBalanceFactor(node);
+        node->height = max(height(node->left), height(node->right)) + 1;  //Updates height after insertion
+        int balanceFactor = getBalanceFactor(node);                 //Checks balance factor and performs rotations
 
         if (balanceFactor > 1 && value < node->left->value){
             return rotateRight(node);
@@ -111,50 +112,26 @@ private:
             node->right = rotateRight(node->right);
             return rotateLeft(node);
         }
-
         return node;
     }
 
-    void inorderTraversalRecursive(Node* node){
+    void inorderTraversalRecursive(Node* node){             //Based on Amans Slides
         if (node != nullptr) {
             inorderTraversalRecursive(node->left);
-            cout << node->value << " ";
+            cout << node->value << " ";                     //Outputs in alphabetical order
             inorderTraversalRecursive(node->right);
         }
     }
 
-
-public:
-    AVLTree() : root(nullptr) {}
-
-    void insert(const string& value){
-        root = insertRecursive(root, value);
-    }
-
-    void inorderTraversal(){
-        inorderTraversalRecursive(root);
-    }
-    Node* search(const string& value){
-        return searchRecursive(root, value);
-    }
-    string toLowercase(string str){
+    string toLowercase(string str){                         //Lowercase without comparison
         transform(str.begin(), str.end(), str.begin(), ::tolower);
         return str;
     }
 
-// Function to replace spaces with hyphens in a string
-    string replaceSpacesWithHyphens(string str){
-        replace(str.begin(), str.end(), ' ', '-');
-        return str;
-    }
 };
-
-
 
 int main() {
     AVLTree avlTree;
-
-    // Populate the AVL tree with words from files (as before)
     string filenames[] = {
             "C:\\Users\\chmer\\CLionProjects\\Project3BST\\words_list_output.csv",
             "C:\\Users\\chmer\\CLionProjects\\Project3BST\\final_buzzwords_skills_output.csv",
@@ -164,10 +141,9 @@ int main() {
             "C:\\Users\\chmer\\CLionProjects\\Project3BST\\top_words_output.csv"
     };
 
-    for(const string& filename : filenames){
+    for (const string& filename : filenames) {  //Iterates through array and reads files
         ifstream file(filename);
         if (!file.is_open()) {
-            cerr << "Failed to open file: " << filename << endl;
             return 1;
         }
 
@@ -175,26 +151,22 @@ int main() {
         while (getline(file, line)) {
             stringstream ss(line);
             string word;
-            if (getline(ss, word, ',')){
-                avlTree.insert(word);
+            if (getline(ss, word, ',')) {           //Comma as delimiter to read CSV
+                avlTree.root = avlTree.insertRecursive(avlTree.root, word);  //Inserts words from files into tree
             }
         }
-        //avlTree.inorderTraversal();
         file.close();
     }
 
-
-    //cout << "Enter a paragraph: ";
-    string paragraph;               //Take input paragraph from the user
+    string paragraph;               // Take input paragraph from the user
     getline(cin, paragraph);
     paragraph = avlTree.toLowercase(paragraph);
 
-
-    vector<string> overlappingWords;    //Compare to words in tree
+    vector<string> overlappingWords;    // Compare to words in tree
     stringstream ss(paragraph);
     string word;
     while (ss >> word) {
-        if (avlTree.search(word)) {
+        if (avlTree.searchRecursive(avlTree.root, word)){
             overlappingWords.push_back(word);
         }
 
@@ -203,22 +175,20 @@ int main() {
             string phrase1 = word.substr(0, hyphenPos);
             string phrase2 = word.substr(hyphenPos + 1);
             string phraseWithHyphen = phrase1 + "-" + phrase2;
-            if (avlTree.search(phraseWithHyphen)) {
+            if (avlTree.searchRecursive(avlTree.root, phraseWithHyphen)){
                 overlappingWords.push_back(phraseWithHyphen);
             }
             hyphenPos = word.find('-', hyphenPos + 1);
         }
     }
 
-    //cout << "Overlapping:" << endl;
-    for (string overlappingWord : overlappingWords) {
-        for (char& c : overlappingWord) {
-            if (c == '-') {
+    for (string overlappingWord : overlappingWords){        //Removes hyphens in words
+        for(char& c : overlappingWord) {
+            if (c == '-'){
                 c = ' ';
             }
         }
         cout << overlappingWord << endl;
     }
-
     return 0;
 }
