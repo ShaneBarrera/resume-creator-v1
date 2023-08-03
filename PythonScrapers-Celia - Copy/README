@@ -1,0 +1,24 @@
+#Scrapers and the urls they got
+#(I made this many because it took me a few tries to get the hang of it, and many websites had dramatically different structures)
+
+##From NounScraper
+-[Website 1](https://examples.yourdictionary.com/examples-of-skills.html)
+-[Website 2](https://novoresume.com/career-blog/most-important-skills-to-put-on-your-resume)
+-Also included large array of words
+
+##From VerbWebScraper
+-[Website 1](https://verbs.colorado.edu/verb-index/index/A.php)
+-Actually used 26 websites, they had a website for each letter of the alphabet
+
+##From MiscWordScraper
+-[Website 1](https://zety.com/blog/resume-action-words)
+-[Website 2](https://www.jobscan.co/blog/top-resume-keywords-boost-resume/)
+
+##From buzzword_skills_scraper
+-[Website 1](https://zety.com/blog/resume-buzzwords')
+-[Website 2](https://enhancv.com/resume-skills/)
+
+
+##From NounScraper
+-[Website 1](https://www.fluentu.com/blog/business-english/how-to-speak-business-english/)
+-Also included several arrays
