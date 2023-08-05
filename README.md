@@ -11,3 +11,5 @@ Our goal is to automate this process and provide users with a [Program](https://
 
 
 # Instructions
+1. Install a [zip] of the corresponding repository.
+2. 
