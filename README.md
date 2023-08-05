@@ -9,6 +9,12 @@ Our goal is to automate this process and provide users with a [Program](https://
 5. Locate a **job posting** from [Indeed](https://www.indeed.com/?aceid=&gclid=CjwKCAjw5remBhBiEiwAxL2M9-pnLuxL9aJPS8UisEOCIFVx20fqImSeTwzhiDEAoltwoHYOxmPq2RoCY1cQAvD_BwE&gclsrc=aw.ds) and copy its details into the terminal.
 6. Type `ENDPOST` to indicate a complete job posting, and press `Enter`.
 7. The final resume will be created as `resume-draft.docx`.
+# Notes
+Future updates to this program may include the following:
+1. Implementing a simple UI and eliminating a terminal-based input.
+2. Creating an open-source website for users to create resumes from directly.
+3. Reformatting the resume based on a greater variety of type - stem, medical, service, etc.
+4. Organizing the final resume into a user-based format - templates that are visually appealing as opposed to only a `.docx` file.
 # Credits 
 **Shane Barrera**
 
