@@ -17,6 +17,8 @@ Future updates to this program may include the following:
 4. Organizing the final resume into a user-based format - templates that are visually appealing as opposed to only a `.docx` file.
 # Credits 
 **Silas Raye**
+
 **Celia Mercier**
+
 **Shane Barrera**
 
