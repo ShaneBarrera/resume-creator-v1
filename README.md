@@ -1,5 +1,5 @@
 # Resume-Creator-V1
-Creating a tailored resume for a specific job based on a **questionnaire** and a pre-existing **job posting**. Utilizing one's educational background, work experience, and skills when applying for different positions. Our goal is to automate this process and provide users with a [Program](https://docs.google.com/document/d/1no8bt4Vl_ngE7u_FqTtYrcEvz9cRQZMV-iriTJQQ_Ic/edit?usp=sharing) that generates a customized resume based on locating skills words prevalent between their input and the located job listing.
+Creating a tailored resume for a specific job based on a **questionnaire** and a pre-existing **job posting**. Utilizing one's educational background, work experience, and skills when applying for different positions. Our goal is to automate this process and provide users with a [Program](https://docs.google.com/document/d/1no8bt4Vl_ngE7u_FqTtYrcEvz9cRQZMV-iriTJQQ_Ic/edit?usp=sharing) that generates a customized resume by locating skills words prevalent through their answers and the information contained in a job posting.
 # Instructions
 1. Install a **zip** of the corresponding repository.
 2. Run `final-program.py` using [Visual Studio Code](https://code.visualstudio.com/).
