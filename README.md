@@ -8,7 +8,7 @@ Check out a demonstration of our program in a [video-sketch format](https://yout
 2. Run `final-program.py` using [Visual Studio Code](https://code.visualstudio.com/).'
 3. Compile and run.
 4. Enter your `name` into the terminal.
-5. Fill out the questionnaire. Your data will be saved as `(your name)-data` within the source folder on your device. This is a `csv` file.
+5. Fill out the questionnaire. Your data will be saved as `(your name)-data` within the source folder on your device. This is a `.csv` file.
 6. Locate a **job posting** from [Indeed](https://www.indeed.com/?aceid=&gclid=CjwKCAjw5remBhBiEiwAxL2M9-pnLuxL9aJPS8UisEOCIFVx20fqImSeTwzhiDEAoltwoHYOxmPq2RoCY1cQAvD_BwE&gclsrc=aw.ds) and copy its details into the terminal.
 7. Type `ENDPOST` to indicate a complete job posting, and press `Enter`.
 8. The final resume will be created as `resume-draft.docx`.
